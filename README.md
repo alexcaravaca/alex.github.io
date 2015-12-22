@@ -1,4 +1,5 @@
-# alex.github.io
+Alex Song App Test
+==================
 
 To Run this proyect please do the following steps:
 
@@ -7,4 +8,6 @@ To Run this proyect please do the following steps:
 3- once the npm finish please run "bower install"
 4- You will need to start a fake json-server. on Terminal go to the file location on your computer for the file called song.json  
 and run the following statment: json-server --watch db/songs.json
+
+
 
