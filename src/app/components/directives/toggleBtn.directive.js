@@ -3,10 +3,10 @@
 
     angular
         .module('alexSongApp')
-        .directive('toggleButtons', toggleButtons);
+        .directive('toggleBtn', toggleBtn);
 
     /** @ngInject */
-    function toggleButtons() {
+    function toggleBtn() {
         return {
             restrict: 'E',
             scope: {

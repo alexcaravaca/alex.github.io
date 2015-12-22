@@ -3,14 +3,14 @@
 
     angular
         .module('alexSongApp')
-        .directive('listItems', listItems);
+        .directive('gridList', gridList);
 
     /** @ngInject */
-    function listItems() {
+    function gridList() {
         var directive = {
             restrict: 'E',
             transclude: true,
-            templateUrl: 'app/components/listItem/listItems.html'
+            templateUrl: 'app/components/listItem/gridList.html'
         };
 
         return directive;

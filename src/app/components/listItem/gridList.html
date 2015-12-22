@@ -10,14 +10,14 @@
                     <div class="playBtn"></div>
                 </a>
                 <div class="playListItem">
-                    <h1>{{song.songname | capitalize}}</h1>
-                    <p>{{song.artistname | capitalize}} </p>
+                    <h1>{{song.songname | camelCase}}</h1>
+                    <p>{{song.artistname | camelCase}} </p>
                 </div>
             </div>
             <div class="rightGridItem">
                 <div class="fieldset">
                     <div>
-                        <toggle-buttons data-toggle="buttons-radio" model="'Today'" options='["Today", "Friday"]' />
+                        <toggle-btn data-toggle="buttons-radio" model="'Today'" options='["Today", "Friday"]' />
                     </div>
                 </div>
             </div>

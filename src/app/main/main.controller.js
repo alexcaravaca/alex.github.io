@@ -6,8 +6,8 @@
       .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController($rootScope, $scope, $http, $filter,JsonService) {
-    MainController.$inject = ['$rootScope', '$scope', '$http', '$filter','JsonService'];
+  function MainController($rootScope, $scope, $http, $filter) {
+    MainController.$inject = ['$rootScope', '$scope', '$http', '$filter'];
 
 
    // defining variables for handling data and app behavior
