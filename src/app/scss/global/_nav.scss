@@ -1,0 +1,70 @@
+.top-navbar-container {
+    position: relative;
+    min-height: 36px;
+
+
+
+    .yellow-bar{
+        background-color:$yellow;
+        height: 4px;
+        width: 100%;
+
+    }
+    .nav-btns{
+        position: absolute;
+        width: 250px;
+        right: 190px;
+
+        @include breakpoint('phone') {
+            margin: 0 auto;
+            position: relative;
+            right: 0px;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            text-align: center;
+            font-family: arial;
+            font-size: 11px;
+            line-height: 20px;
+
+
+        }
+
+        a:hover{
+            color: #337ab7;
+        }
+
+
+        .NowPlay-Btn{
+            @extend .yellowButtonGradient;
+            margin-right: 10px;
+            width: 115px;
+            background-color: $yellow;
+            float: left;
+            height: 21px;
+            -webkit-border-radius: 0 0 10px 10px;
+            border-radius: 0 0 30px 30px;
+
+
+        }
+        .rateSongs-Btn{
+            @extend .yellowButtonGradient;
+            width: 115px;
+            background-color: $yellow;
+            float: left;
+            height: 21px;
+            -webkit-border-radius: 0 0 30px 30px;
+            border-radius: 0 0 30px 30px;
+        }
+
+    }
+
+
+    .dropShadow {
+        box-shadow: 0 4px 6px 0 rgba(0,0,0,.5);
+    }
+
+
+}

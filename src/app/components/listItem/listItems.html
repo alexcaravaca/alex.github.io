@@ -1,0 +1,26 @@
+
+<div class="playListGrid"  ng-hide="isLoadingData"> <!---->
+    <ul class="flex-container">
+        <div ng-show="!songList.length && searchActivated" class="errorMsg">
+            <p class="no-songs">No songs to display</p>
+        </div>
+        <li class="flex-item {{getBGColor($index)}} animated slideInDown" ng-repeat="song in songList">
+            <div class="leftGridItem">
+                <a href="{{getSpotyURL(song.url)}}" target="_blank">
+                    <div class="playBtn"></div>
+                </a>
+                <div class="playListItem">
+                    <h1>{{song.songname | capitalize}}</h1>
+                    <p>{{song.artistname | capitalize}} </p>
+                </div>
+            </div>
+            <div class="rightGridItem">
+                <div class="fieldset">
+                    <div>
+                        <toggle-buttons data-toggle="buttons-radio" model="'Today'" options='["Today", "Friday"]' />
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

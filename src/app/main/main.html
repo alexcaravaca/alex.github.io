@@ -1,0 +1,56 @@
+  <header>
+    <acm-navbar></acm-navbar>
+  </header>
+
+
+  <div class="container-fluid ">
+
+    <section>
+      <div class="background">
+        <div class="clouds_one"></div>
+        <div class="clouds_two"></div>
+        <div class="clouds_three"></div>
+
+
+
+      <div class="row">
+        <div class="xs-col-12">
+          <div class="hangar-logo">
+            <img class="img-responsive" ng-src="assets/images/hangar_logo.png">
+            <p>Hangar o’clock songs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="xs-col-12 container-form">
+              <form  name="searchBoxForm" novalidate>
+                <input type="text" name="song" ng-change="InputValidation()" required placeholder="Search Music" key-enter="songSearch()" ng-model="userImput" ng-maxlength="18"></input>
+                <a href="#" ng-click="songSearch()">
+                  <i class="fa fa-search"></i>
+                </a>
+              </form>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="xs-col-12">
+          <list-items></list-items>
+        </div>
+      </div>
+
+
+      </div>
+      </section>
+  </div>
+
+  <div class="footer container-fluid">
+
+      <div class="footerContainer">
+        <div class="footer_inner_left">© 2011 The Hangar Interactive. All rights reserved</div>
+        <div class="footer_inner_right">Privacy Policy | Terms of Use | Contact Us</div>
+      </div>
+
+  </div>
